@@ -8,6 +8,7 @@
 <body>
   <div id="mocha"></div>
   <script src="lib/mocha/mocha.js"></script>
+  <script src="lib/expect.js"></script>
   <script>mocha.setup('bdd')</script>
 
   <!-- assertion framework -->
@@ -22,18 +23,7 @@
   <!-- include source files here... -->
   <script src="../app/scripts/gutenberg.js"></script>
   <!-- include spec files here... -->
-  <script>
-  // replace this by your own specs
-  (function() {
-    describe('Gutenberg should', function() {
-
-        it('return the correct markup for a single property template', function() {
-          assert.equal(Gutenberg({foo: 'bar'}, '<div>{{foo}}</div>'), '<div>bar</div>');
-        });
-
-    });
-  })();
-  </script>
+  <script src="spec/gutenberg_spec.js"></script>
 
   <!-- trigger the mocha runner -->
   <script src="runner/mocha.js"></script>
