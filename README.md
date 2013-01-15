@@ -8,7 +8,7 @@ Using the library is super simple, it exposes a global function `Gutenberg()` wh
 
 The syntax for the template uses that of the Moustache templating library, for example `{{foo}}`. For example:
 
-	Gutenberg({foo: "bar"}, '<div>{{foo}}</div>);
+	Gutenberg({foo: "bar"}, '<div>{{foo}}</div>');
 	// returns '<div>bar</div>'
 	
 This example is a very simple one, and the advantage to such a simple templating system is pure speed. As you will see if you use it yourself, as it scales to very large templates with little effort.
